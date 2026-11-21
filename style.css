@@ -120,3 +120,35 @@
         padding: 12px;
     }
 }
+    
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: 120px;
+        left: 50%;
+    }
+
+    .clock {
+        width: 100%;
+        gap: 0;
+    }
+
+    .clock span {
+        width: auto;
+        flex: 1;
+        font-size: clamp(24px, 8vw, 40px);
+    }
+
+    .clock span::after {
+        font-size: 9px;
+        bottom: -18px;
+    }
+
+    .container::before {
+        width: 80px;
+        height: 80px;
+        left: -15px;
+        top: -25px;
+    }
+}
